@@ -1,0 +1,350 @@
+*{
+    padding:0;
+    margin:0;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    font-family: 'Roboto','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html{
+    background-color: rgba(240,240,240,0.5);
+}
+
+
+body{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(240,240,240,0.5);
+}
+
+header nav{
+    width:100%;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav div.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div.logo img{
+    max-width: 46px;
+}
+
+nav div.logo span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+header nav span.menubut{
+    height: 30px;
+    width: 45px;
+    background-color: #c10841;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+
+ul.navbar{
+width:100%;
+    max-width: 1000px;
+    padding: 10px 30px;
+    display: flex;
+    position: absolute;
+    top: 60px;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+ul.navbar li{
+    width:100%;
+    text-align: end;
+    margin-top: 20px;
+    list-style: none;
+}
+
+ul.navbar li.dropdown li{
+    text-align: start;
+}
+
+ul.navbar li.active{
+    padding: 10px 0;
+    background-color: rgba(230,230,230,1);
+}
+
+
+ul.navbar a{
+    color: black;
+    text-decoration: none;
+}
+
+li.dropdown{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    display: none;
+}
+
+li.dropdown .language{
+    align-self: flex-end;
+    text-align: end;
+    width: 100%;
+}
+
+
+li.dropdown .dropdown-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+div.main_wrap{
+    width:100%;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid rgba(230,230,230,0.8);
+    background-color: white;
+}
+
+div.intro{
+    width:100%;
+    padding: 10px 0;
+    
+    height:calc(100vh - 66px);
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("../images/bg.jpg");
+}
+
+div.intro h1.intro-header{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    font-weight: 300;
+    color: rgba(245,245,245,0.9);
+}
+
+div.intro form{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 10vh auto;
+    padding: 5px;
+    background-color: #c10841;
+}
+
+div.intro form input[type="text"]{
+    padding: 15px 5px;
+    /*outline: darkgray;*/
+    /*background: #e0e0e0;*/
+    border: 0;
+    font-size: 1.0rem;
+    flex-grow: 1;
+}
+
+div.intro form input[type="submit"]{
+    width: 20%;
+    max-width: 120px;
+    min-width: 30px;
+    background-color: #c10841;
+    border: 0;
+    font-size: 0.8rem;
+    color:white;
+}
+
+div.intro p.small{
+    width:100%;
+    font-size: 0.8rem;
+    padding: 10px 5px;
+    margin-bottom: auto;
+    text-align: center;
+    color: rgba(245,245,245,0.9);
+}
+
+p.small a{
+    color: #c10841;
+    text-decoration: none;
+}
+
+div.guide-wrap{
+    width:calc(100% - 40px);
+    margin: 0px auto;
+    padding:30px 0;
+    border-top: 1px solid rgba(230,230,230,0.8);
+    line-height: 1.5rem;
+}
+
+div.guide-wrap div.tip{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+div.guide-wrap div.tip img{
+    padding: 20px 0;
+}
+
+div.guide-wrap div.guide p:not(:first-of-type){
+    margin-top: 10px;
+}
+
+section.about{
+    padding: 45px 30px;
+    background-color: rgba(240,240,240,0.5);
+}
+
+section.about div.content h1{
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+section.about div.content h4{
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 10px;
+    line-height: 1.7rem;
+    text-align: center;
+}
+
+section.instructions{
+    background-color: rgba(240,240,240,0.6);
+}
+
+section.instructions div.wrapper{
+    width: calc(100% - 30px);
+    margin: 0px auto;
+    padding: 40px 10px;
+    border-top: 1px solid rgba(230,230,230,0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+section.instructions div.wrapper > div{
+    flex-grow: 1;
+}
+
+div.content-b{
+    margin-top: 30px;
+}
+div.wrapper h5{
+    font-size: 1.0rem;
+}
+
+div.wrapper p{
+    margin-top: 15px;
+}
+
+section.links{
+    background-color: rgba(240,240,240,0.6);
+}
+
+
+div.link-contents{
+    border-top: 1px solid rgba(230,230,230,0.8);
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+div.link-contents > div{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+div.link-contents >div:not(:first-of-type){
+    margin-top: 20px;
+}
+
+div.link-contents > div > h3{
+    color: #c10841;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+
+div.link-contents > div > h4{
+   font-weight: 100;
+    font-size: 1.0rem;
+    margin-top: 20px;
+}
+
+footer{
+    background-color: rgba(240,240,240,0.6);
+    width: 100%;
+    border-top: 1px solid rgba(230,230,230,0.8);
+}
+
+div.content-footer{
+    display: flex;
+    flex-direction: column;
+    max-width: 465px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 40px 0;
+
+}
+
+div.content-footer ul{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+div.content-footer p{
+    font-size: 0.8rem;
+}
+
+div.content-footer >ul a{
+    flex-grow: 1;
+    text-align: center;
+    padding: 0 8px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color:black;
+}
+
+@media(min-width: 770px){
+    div.link-contents{
+        flex-direction: row;
+    }
+    div.link-contents >div:not(:first-of-type){
+        margin-top: initial;
+    }
+
+    section.instructions div.wrapper{
+        flex-direction: row;
+    }
+
+    div.content-b{
+        margin-top: 0px;
+    }
+
+   
+}
